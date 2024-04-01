@@ -1,6 +1,3 @@
 #include <vector>
 
-class Solution {
-public:
-  int minPathSum(std::vector<std::vector<int>> &);
-};
+int minPathSum(std::vector<std::vector<int>> &);

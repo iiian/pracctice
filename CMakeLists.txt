@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(leet)
+project(praCCtice)
 
 # GoogleTest requires at least C++17
 set(CMAKE_CXX_STANDARD 17)
@@ -16,13 +16,14 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 add_executable(
-  min_sum_path_test
+  praCCtice_tests 
   min_sum_path_test.cc min_sum_path.h min_sum_path.cc
+  wildcard_matching_test.cc wildcard_matching.h wildcard_matching.cc
 )
 target_link_libraries(
-  min_sum_path_test
+  praCCtice_tests
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(min_sum_path_test)
+gtest_discover_tests(praCCtice_tests)

@@ -9,7 +9,7 @@ using namespace std;
 
 void printGrid(const vector<vector<int>> &);
 
-int Solution::minPathSum(vector<vector<int>> &grid) {
+int minPathSum(vector<vector<int>> &grid) {
   int bottom = grid.size() - 1;
   int right = grid[0].size() - 1;
   int edge = bottom; // moves up as we get closer to origin
